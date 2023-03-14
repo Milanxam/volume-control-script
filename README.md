@@ -18,7 +18,7 @@ $ cd volume-control-script
 $ chmod +x changevolume.sh 
 ```
 
-You can call the script like this:
+You can call the script like this, to increase, decrease and mute the volume respectively:
 
 ```
 $ ./<path-to-dir>/changevolume.sh up
