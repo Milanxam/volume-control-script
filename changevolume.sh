@@ -1,31 +1,22 @@
 #!/bin/bash
 
-#function send_notification() {
-#	volume=$(pamixer --get-volume)
-#	dunstify -$icon_name -a "changevolume" -u low -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
-
-
 function send_notification {
+	DIR="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 	volume=$(pamixer --get-volume)
 
 if [ "$volume" = "0" ]; then
-	icon_name="~/.local/bin/icons/audio-volume-muted-symbolic.svg"
 	dunstify -i ~/.local/bin/icons/audio-volume-muted-symbolic.svg -a "changevolume" -u low -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
     else
 	if [ "$volume" -lt "40" ]; then
-		icon_name="~/.local/bin/icons/audio-volume-low-symbolic.svg"
 		dunstify -i ~/.local/bin/icons/audio-volume-low-symbolic.svg -a "changevolume" -u low -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
 	else
 	    if [ "$volume" -lt "70" ]; then
-		icon_name="~/.local/bin/icons/audio-volume-medium-symbolic.svg"
 		dunstify -i ~/.local/bin/icons/audio-volume-medium-symbolic.svg -a "changevolume" -u low -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
 	    else
 		if [ "$volume" -lt "100" ]; then
-		    icon_name="~/.local/bin/icons/audio-volume-high-symbolic.svg"
 		    dunstify -i ~/.local/bin/icons/audio-volume-high-symbolic.svg -a "changevolume" -u low -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000
 		else
-		    icon_name="~/.local/bin/icons/audio-volume-overamplified-symbolic.svg"
-		     dunstify -i ~/.local/bin/icons/audio-volume-overamplified-symbolic.svg -a "changevolume" -u low -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000		
+		     dunstify -i $DIR/icons/audio-volume-overamplified-symbolic.svg -a "changevolume" -u low -r "9993" -h int:value:"$volume" "Volume: ${volume}%" -t 2000		
 	    fi
         fi
     fi
