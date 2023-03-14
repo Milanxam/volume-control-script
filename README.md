@@ -10,6 +10,8 @@ Using Popcat as volume indicator
 
 # Usage
 
+Install the script like this:
+
 ```
 $ git clone https://github.com/Milanxam/volume-control-script.git
 $ cd volume-control-script
