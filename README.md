@@ -25,3 +25,14 @@ $ ./<path-to-dir>/changevolume.sh up
 $ ./<path-to-dir>/changevolume.sh down
 $ ./<path-to-dir>/changevolume.sh mute
 ```
+
+## Configuration
+
+You can change the icon set by replacing the svg files in the icons directory
+and naming them like this: 
+
+- `audio-volume-***mute***-symbolic.svg`
+- `audio-volume-***low***-symbolic.svg`
+- `audio-volume-***medium***-symbolic.svg`
+- `audio-volume-***high***-symbolic.svg`
+- `audio-volume-***overamplified***-symbolic.svg`
