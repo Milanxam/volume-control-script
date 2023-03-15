@@ -8,7 +8,7 @@ Using Popcat as volume indicator
 
 ![recr](https://user-images.githubusercontent.com/96538473/225101522-100d7e7b-4ba8-4d3a-b080-47214013be99.gif)
 
-## Usage
+## Installation
 
 Install the script like this:
 
@@ -17,6 +17,8 @@ $ git clone https://github.com/Milanxam/volume-control-script.git
 $ cd volume-control-script
 $ chmod +x changevolume.sh 
 ```
+
+## Usage 
 
 You can call the script like this, to increase, decrease and mute the volume respectively:
 
