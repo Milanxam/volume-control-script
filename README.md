@@ -2,6 +2,11 @@
 
 A volume control script for the Dunst notification daemon using custom icons, also working with Wayland!
 
+Do you need this?
+No you don't.
+Do you you want this?
+I think you do!
+
 ## Demo 
 
 Using Popcat as volume indicator
