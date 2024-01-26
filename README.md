@@ -1,6 +1,6 @@
-# Control your Volume and have a cool custom display, on linux and working with Hyprland!
+# Custom Volume Control Script and Display!
 
-A volume control script for the Dunst notification daemon using custom icons
+A volume control script for the Dunst notification daemon using custom icons, also working with Wayland!
 
 ## Demo 
 
