@@ -2,9 +2,9 @@
 
 A volume control script for the Dunst notification daemon using custom icons, also working with Wayland!
 
-Do you need this?
-No you don't.
-Do you you want this?
+Do you need this? \n
+No you don't. \n
+Do you you want this? \n
 I think you do!
 
 ## Demo 
