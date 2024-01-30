@@ -12,7 +12,7 @@ Using Popcat as volume indicator
 
 Install the script like this:
 
-```
+```bash
 $ git clone https://github.com/Milanxam/volume-control-script.git
 $ cd volume-control-script
 $ chmod +x changevolume.sh 
@@ -22,7 +22,7 @@ $ chmod +x changevolume.sh
 
 You can call the script like this, to increase, decrease and mute the volume respectively:
 
-```
+```bash
 $ ./<path-to-dir>/changevolume.sh up
 $ ./<path-to-dir>/changevolume.sh down
 $ ./<path-to-dir>/changevolume.sh mute
