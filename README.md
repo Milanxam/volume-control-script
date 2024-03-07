@@ -1,6 +1,6 @@
 # Custom Volume Control Script and Display!
 
-A volume control script for the Dunst notification daemon using custom icons, also working with Wayland! a
+A volume control script for the Dunst notification daemon using custom icons, also working with Wayland!
 
 ## Demo 
 
